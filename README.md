@@ -15,4 +15,4 @@
  - *_override.tf игнорируются фалы заканчивающиеся на "_override.tf"
  - *_override.tf.json игнорируются фалы заканчивающиеся на "_override.tf"
  - .terraformrc этот файл игнорируется
- - terraform.rc этот файл игнорируется
+ - terraform.rc этот файл игнорируетсяtest
