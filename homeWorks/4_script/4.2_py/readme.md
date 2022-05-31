@@ -37,7 +37,6 @@ for result in result_os.split('\n'):
 ```
 
 ### Ваш скрипт:
-### Ваш скрипт:
 ```python
 #!/usr/bin/env python3
 
