@@ -1,0 +1,10 @@
+variables.tf
+key.json
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
