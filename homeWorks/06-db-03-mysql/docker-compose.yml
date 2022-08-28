@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: arm64v8/mysql:oracle
+    environment:
+      MYSQL_ROOT_PASSWORD: passwd
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: passwd
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./test_data:/opt/dump
+      - ./test_my.cnf:/etc/mysql/conf.d/test_my.cnf
+
+volumes:
+  netology_mysql_6_3:
