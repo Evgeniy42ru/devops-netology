@@ -31,6 +31,34 @@
 >
 >Далее мы будем работать с данным экземпляром elasticsearch.
 
+### Ответ:
+- Текст Dockerfile манифеста ./elasticsearch/Dockerfile
+- [Образ в репозитории dockerhub](https://hub.docker.com/repository/docker/evgeniy42ru/netology-devops-elasticsearch)
+- Ответ `elasticsearch` на запрос пути `/` в json виде
+``` shell
+[root@14a46b45e335 /]# curl --request GET -sL \
+>      --url 'http://localhost:9200/' \
+>      -H "Content-Type: application/json" \
+>      -H "Accept: application/json"
+{
+  "name" : "netology_test",
+  "cluster_name" : "elasticsearch-cluster",
+  "cluster_uuid" : "9IUol4tOQC2TC06U14DmBw",
+  "version" : {
+    "number" : "8.5.3",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "4ed5ee9afac63de92ec98f404ccbed7d3ba9584e",
+    "build_date" : "2022-12-05T18:22:22.226119656Z",
+    "build_snapshot" : false,
+    "lucene_version" : "9.4.2",
+    "minimum_wire_compatibility_version" : "7.17.0",
+    "minimum_index_compatibility_version" : "7.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+
 
 ## Задача 2
 
