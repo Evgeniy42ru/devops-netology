@@ -36,7 +36,7 @@
 - [Образ в репозитории dockerhub](https://hub.docker.com/repository/docker/evgeniy42ru/netology-devops-elasticsearch)
 - Ответ `elasticsearch` на запрос пути `/` в json виде
 ``` shell
-[root@14a46b45e335 /]# curl --request GET -sL \
+curl --request GET -sL \
 >      --url 'http://localhost:9200/' \
 >      -H "Content-Type: application/json" \
 >      -H "Accept: application/json"
