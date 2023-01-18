@@ -50,13 +50,20 @@ go version go1.19.5 darwin/amd64
 >В виде решения ссылку на код или сам код. 
 
 ### Ответ:
+1. [Напишите программу для перевода метров в футы (1 фут = 0.3048 метр). Можно запросить исходные данные](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/07-terraform-05-golang/golang/task1/task_one_meters_to_feet_converter.go)
 
+2. [Напишите программу, которая найдет наименьший элемент в любом заданном списке](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/07-terraform-05-golang/golang/task2/task_two_find_min_element.go)
+
+3. [Напишите программу, которая выводит числа от 1 до 100, которые делятся на 3.](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/07-terraform-05-golang/golang/task3/task_three_multiples_of_three.go)
 
 ## Задача 4. Протестировать код (не обязательно).
 >
 >Создайте тесты для функций из предыдущего задания. 
 
 ### Ответ:
+1. [ТЕСТ Напишите программу для перевода метров в футы (1 фут = 0.3048 метр). Можно запросить исходные данные](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/07-terraform-05-golang/golang/task1/task_one_meters_to_feet_converter_test.go)
+
+2. [ТЕСТ Напишите программу, которая найдет наименьший элемент в любом заданном списке](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/07-terraform-05-golang/golang/task2/task_two_find_min_element_test.go)
 
 
 ---
