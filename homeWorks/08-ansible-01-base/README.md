@@ -125,7 +125,7 @@ centos7                    : ok=3    changed=0    unreachable=0    failed=0    s
 ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
 ```
 
-5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
+>5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 
 Ответ:
 ```shell
@@ -135,7 +135,7 @@ cat group_vars/deb/examp.yml && cat group_vars/el/examp.yml
 ---
   some_fact: "el default fact"%  
 ```
-6.  Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
+>6.  Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
 
 Ответ: значения выдаются корректные.
 ```shell
@@ -168,7 +168,7 @@ centos7                    : ok=3    changed=0    unreachable=0    failed=0    s
 ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```
 
-7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
+>7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 
 Ответ:
 ```shell
@@ -184,7 +184,7 @@ Confirm New Vault password:
 Encryption successful
 ```
 
-8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
+>8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
 
 Ответ:
 ```shell
@@ -279,7 +279,7 @@ playbook % cat inventory/prod.yml
         ansible_connection: local
 ```
 
-11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
+>11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
 
 Ответ:
 ```shell
