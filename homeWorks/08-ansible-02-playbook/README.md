@@ -204,6 +204,7 @@ Passed with production profile: 0 failure(s), 0 warning(s) on 1 files.
 >### 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
 
 Т.к. это симуляция - логично что падают таски которые используют файлы которые должны появится из предыдущих тасок.
+
 https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_checkmode.html - Check mode is just a simulation. It will not generate output for tasks that use conditionals based on registered variables (results of prior tasks).
 
 ```shell
@@ -327,5 +328,7 @@ clickhouse-01              : ok=7    changed=0    unreachable=0    failed=0    s
 ```
 
 >### 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
+
+https://github.com/Evgeniy42ru/devops-netology/tree/main/homeWorks/08-ansible-02-playbook
 
 ---
