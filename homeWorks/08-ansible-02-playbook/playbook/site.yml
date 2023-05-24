@@ -1,6 +1,8 @@
 ---
 - name: Install Clickhouse
   hosts: clickhouse
+  tags:
+    - clickhouse
   handlers:
     - name: Start clickhouse service
       become: true
@@ -38,14 +40,21 @@
       failed_when: create_db.rc != 0 and create_db.rc != 82
       changed_when: create_db.rc == 0
 - name: Install vector
-  hosts: clickhouse-01
+  hosts: vector
+  tags:
+    - vector
   tasks:
     - name: Get vector distrib
       ansible.builtin.get_url:
-        url: "https://packages.timber.io/vector/0.30.0/vector-0.30.0-1.{{ vector_arch }}.rpm" 
+        url: "https://packages.timber.io/vector/0.30.0/vector-0.30.0-1.{{ vector_arch }}.rpm"
         dest: "./vector-0.30.0-1.{{ vector_arch }}.rpm"
         mode: "0755"
     - name: Install vector
       ansible.builtin.yum:
         name:
           - vector-0.30.0-1.{{ vector_arch }}.rpm
+    - name: Configure vector
+      ansible.builtin.template:
+        src: "./template/vector/vector.toml.j2"
+        dest: "/etc/vector/vector.toml"
+        mode: "0755"
