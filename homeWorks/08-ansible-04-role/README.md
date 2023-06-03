@@ -50,16 +50,16 @@ ansible-galaxy role init lighthouse-role
 ```
 
 >4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`.
-- [`Vector`](./roles/vector-role/)
-- [`Lighthouse`](./roles/lighthouse-role/)
+- [`Vector`](https://github.com/Evgeniy42ru/vector-role)
+- [`Lighthouse`](https://github.com/Evgeniy42ru/lighthouse-role)
 
 >5. Перенести нужные шаблоны конфигов в `templates`.
-- [`Vector`](./roles/vector-role/templates/)
-- [`Lighthouse`](./roles/lighthouse-role/templates/)
+- [`Vector`](https://github.com/Evgeniy42ru/vector-role/tree/main/templates/vector)
+- [`Lighthouse`](https://github.com/Evgeniy42ru/lighthouse-role/tree/main/templates/nginx)
 
 >6. Опишите в `README.md` обе роли и их параметры.
-- [`Vector`](./roles/vector-role/README.md)
-- [`Lighthouse`](./roles/lighthouse-role/README.md)
+- [`Vector`](https://github.com/Evgeniy42ru/vector-role/blob/main/README.md)
+- [`Lighthouse`](https://github.com/Evgeniy42ru/lighthouse-role/blob/main/README.md)
 
 >7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
 
@@ -143,19 +143,29 @@ To https://github.com/Evgeniy42ru/vector-role.git
 Добавил roles в `requirements.yml` в playbook.
 [`requirements.yml`](./playbook/requirements.yml)
 
+Устанавливаю роли.
+```shell
+ansible-galaxy install -r requirements.yml -p roles
+Starting galaxy role install process
+- clickhouse (1.11.0) is already installed, skipping.
+- extracting vector to /Users/Evgeniy/Projects/netology/devops-netology/homeWorks/08-ansible-04-role/playbook/roles/vector
+- vector (1.0.0) was installed successfully
+- extracting Lighthouse to /Users/Evgeniy/Projects/netology/devops-netology/homeWorks/08-ansible-04-role/playbook/roles/Lighthouse
+- Lighthouse (1.0.0) was installed successfully
+```
+
 >9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.
 
-[`Переработайте playbook`](./playbook/site.yml)
+[`Переработал playbook`](./playbook/site.yml)
 
 >10. Выложите playbook в репозиторий.
 
+[`playbook`](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/08-ansible-04-role/playbook)
 
-11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+>11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
----
-
-### Как оформить решение задания
-
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
+- [`playbook`](https://github.com/Evgeniy42ru/devops-netology/blob/main/homeWorks/08-ansible-04-role/playbook)
+- [`lighthouse-role`](https://github.com/Evgeniy42ru/lighthouse-role)
+- [`vector-role`](https://github.com/Evgeniy42ru/vector-role)
 
 ---
