@@ -951,7 +951,7 @@ c0450f8aaee9   aragast/netology:latest   "/bin/bash"   4 minutes ago   Up 4 minu
 docker exec -it c0450f8aaee9  bash 
 [root@c0450f8aaee9 vector-role]# 
 ```
-3. Внутри контейнера выполните команду `tox`, посмотрите на вывод.
+>3. Внутри контейнера выполните команду `tox`, посмотрите на вывод.
 
 ```shell
 [root@c0450f8aaee9 vector-role]# tox
