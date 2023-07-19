@@ -1,0 +1,30 @@
+{
+ "collection_info": {
+  "namespace": "netology",
+  "name": "yandex_cloud_elk",
+  "version": "1.0.0",
+  "authors": [
+   "your name <example@domain.com>"
+  ],
+  "readme": "README.md",
+  "tags": [],
+  "description": "collection for netology HW 08-ansible-06-module",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/Evgeniy42ru/my_own_collection",
+  "documentation": [],
+  "homepage": [],
+  "issues": []
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "fc42ce47bc8da6841fb2e1d9176132a0ea73c639e655afeed6a009c35441e4d3",
+  "format": 1
+ },
+ "format": 1
+}
