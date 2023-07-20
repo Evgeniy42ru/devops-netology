@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 7 «Жизненный цикл ПО»
+# Домашнее задание к занятию [7 «Жизненный цикл ПО»](https://github.com/netology-code/mnt-homeworks/blob/MNT-video/09-ci-01-intro/README.md)
 
 ## Подготовка к выполнению
 
